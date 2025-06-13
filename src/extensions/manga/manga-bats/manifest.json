@@ -1,0 +1,19 @@
+{
+  "id": "manga-bats-scrapper",
+  "name": "MangaBats",
+  "description": "",
+  "baseurl": "https://mangabats.com",
+  "lang": "en",
+  "icon": "https://feza.vercel.app/favicon.ico",
+  "isNsfw": true,
+  "version": "0.0.1",
+  "apiUrl": "",
+  "repository": "https://github.com/tsukimichi-extensions",
+  "sourceCodeUrl": "",
+  "minAppVersion": "1.0.0",
+  "maxAppVersion": "1.0.0",
+  "isManga": true,
+  "dependencies": {
+    "cheerio": "^1.1.0"
+  }
+}

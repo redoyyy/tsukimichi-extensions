@@ -1,0 +1,18 @@
+{
+  "extensions": {
+    "manga-bats-extensions": {
+      "name": "Manga Bats Extensions",
+      "description": "A collection of manga extensions for Manga Bats",
+      "author": "Manga Bats",
+      "repository": "https://github.com/MangaBats/manga-bats-extensions",
+      "versions": {
+        "1.0.0": {
+          "downloadUrl": "https://github.com/MangaBats/manga-bats-extensions/releases/download/v1.0.0/manga-bats-extensions.zip",
+          "minVersionRequired": "1.0.0",
+          "publishedAt": "2023-08-01T00:00:00.000Z"
+        }
+      },
+      "latestVersion": "1.0.0"
+    }
+  }
+}
