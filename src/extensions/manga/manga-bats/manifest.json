@@ -9,7 +9,7 @@
   "version": "0.0.1",
   "apiUrl": "",
   "repository": "https://github.com/tsukimichi-extensions",
-  "sourceCodeUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/refs/heads/main/src/extensions/manga/manga-bats/index.js",
+  "sourceCodeUrl": "./index.js",
   "minAppVersion": "1.0.0",
   "maxAppVersion": "1.0.0",
   "isManga": true,
