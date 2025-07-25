@@ -1,0 +1,16 @@
+[
+  {
+    "id": "86c5de1d-af4c-4915-afdd-5c99f3318da3",
+    "name": "Toonily",
+    "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&typr=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://toonily.com&size=128",
+    "description": "",
+    "isManga": true,
+    "containsNSFWContent": true,
+    "isNSFWFocused": false,
+    "minAppVersion": "1.0.0",
+    "url": "https://toonily.com",
+    "version": "",
+    "apiUrl": "",
+    "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions-registry/main/extensions/manga/toonily.zip"
+  }
+]
