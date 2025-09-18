@@ -1,4 +1,4 @@
-"extensions": [
+[
     {
       "id": "89ba0b98-4bb9-448e-ba6b-5c1d3414fa52",
       "name": "ArcaneScans",
@@ -196,3 +196,4 @@
       "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/toonily.zip"
     }
   ]
+
