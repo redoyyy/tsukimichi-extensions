@@ -1,4 +1,4 @@
-[
+"extensions": [
     {
       "id": "89ba0b98-4bb9-448e-ba6b-5c1d3414fa52",
       "name": "ArcaneScans",
@@ -11,7 +11,7 @@
       "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://arcanescans.com&size=128",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/arcane-scans.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/arcane-scans.zip"
     },
     {
       "id": "c85ec5d0-eb47-44ae-8b69-f4925f739a00",
@@ -25,7 +25,7 @@
       "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://culturedworks.com&size=128",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/cultured-works.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/cultured-works.zip"
     },
     {
       "id": "a2c632c6-e3e5-45d5-a540-6354f774fc78",
@@ -39,7 +39,7 @@
       "description": "",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/flame-comics.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/flame-comics.zip"
     },
     {
       "id": "c83cab9b-eaab-4f74-b290-b89a4fa9c201",
@@ -53,7 +53,7 @@
       "description": "",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manga18x.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manga18x.zip"
     },
     {
       "id": "4f355e99-cd3b-4239-b7ac-434a44a77c91",
@@ -67,7 +67,7 @@
       "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mangabats.com&size=128",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manga-bats.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manga-bats.zip"
     },
     {
       "id": "a05f2767-fc68-4899-963a-42c824f24323",
@@ -81,7 +81,7 @@
       "url": "https://mangabin.com",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manga-bin.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manga-bin.zip"
     },
     {
       "id": "be7645dc-c8ad-40a0-a99d-3b7628557ea7",
@@ -95,7 +95,7 @@
       "description": "",
       "version": "",
       "apiUrl": "https://api.mangadex.org",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manga-dex.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manga-dex.zip"
     },
     {
       "id": "8e9e6ed5-fb48-40de-a495-ae9a600e5d97",
@@ -109,7 +109,7 @@
       "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mangakakalot.gg&size=128",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manga-kakalot.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manga-kakalot.zip"
     },
     {
       "id": "1f5fd8a0-30cd-4722-bdbc-e1e683b2dd12",
@@ -123,7 +123,7 @@
       "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mangakatana.com&size=128",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manga-katana.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manga-katana.zip"
     },
     {
       "id": "e0c0fe56-2609-4425-b023-bf9057166631",
@@ -137,7 +137,7 @@
       "url": "https://manhuagold.top",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manhua-gold.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manhua-gold.zip"
     },
     {
       "id": "3545ebde-b3db-4656-8eb5-c254c8fc942d",
@@ -151,7 +151,7 @@
       "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://manhwaread.com&size=128",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manhwa-read.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manhwa-read.zip"
     },
     {
       "id": "8cee4a0f-78e4-4a30-8321-bd9c6244901a",
@@ -165,7 +165,7 @@
       "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://manhwas.men&size=128",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/manhwas-men.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/manhwas-men.zip"
     },
     {
       "id": "b94584d8-23cb-49e6-a00c-53c0aad97f16",
@@ -179,7 +179,7 @@
       "minAppVersion": "1.0.0",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/rizz-comic.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/rizz-comic.zip"
     },
     {
       "id": "4dcb809c-291d-41c6-a3f0-b17fdab7c794",
@@ -193,6 +193,6 @@
       "url": "https://toonily.com",
       "version": "",
       "apiUrl": "",
-      "downloadUrl": "https://github.com/redoyyy/tsukimichi-extensions/raw/refs/heads/main/extensions/manga/toonily.zip"
+      "downloadUrl": "https://raw.githubusercontent.com/redoyyy/tsukimichi-extensions/main/out/extensions/manga/toonily.zip"
     }
   ]
