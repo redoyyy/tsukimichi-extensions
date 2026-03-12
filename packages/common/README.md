@@ -1,1 +1,1 @@
-## Types and common utilities for Tsukimichi desktop app.
+## Types and common utilities for Tsukimichi desktop
