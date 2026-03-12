@@ -1,0 +1,1 @@
+## Types and common utilities for Tsukimichi desktop manga reader and anime watching app.
