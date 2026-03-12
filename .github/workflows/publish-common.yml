@@ -1,76 +1,79 @@
-name: Publish Common Package
+# This workflow will release the packages with Changesets
+
+name: 🚀 Release
 
 on:
   push:
-    branches: [main]
-    paths:
-      - "packages/common/**"
-      - ".github/workflows/publish-common.yml"
-  pull_request:
-    branches: [main]
-    paths:
-      - "packages/common/**"
-      - ".github/workflows/publish-common.yml"
+    branches:
+      - main
+  workflow_dispatch:
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GH_PAT_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      id-token: write
-
+  release:
+    name: 🚀 Release
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [lts/*]
+        pnpm-version: [latest]
+    runs-on: ${{ matrix.os }}
     steps:
-      - name: Checkout
+      - name: ⬇️ Checkout
+        id: checkout
         uses: actions/checkout@v4
         with:
+          token: ${{ env.GITHUB_TOKEN }}
           fetch-depth: 0
-          token: ${{ secrets.GH_PAT_TOKEN }}
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 10
-
-      - name: Setup Node
+      - name: 🟢 Setup node
+        id: setup-node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          registry-url: "https://registry.npmjs.org"
-          cache: "pnpm"
+          node-version: ${{ matrix.node-version }}
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v4
+      - name: 🥡 Setup pnpm
+        id: setup-pnpm
+        uses: pnpm/action-setup@v3
         with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          version: ${{ matrix.pnpm-version }}
+          run_install: false
+
+      - name: 🎈 Get pnpm store directory
+        id: get-pnpm-cache-dir
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - name: 🔆 Cache pnpm modules
+        uses: actions/cache@v4
+        id: pnpm-cache
+        with:
+          path: ${{ steps.get-pnpm-cache-dir.outputs.pnpm_cache_dir }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: 🧩 Install Dependencies
+        id: install-dependencies
+        run: pnpm install
 
-      - name: Build Common package
-        run: pnpm --filter @tsukimichi-extensions/common build
+      - name: 🏗️ Build
+        id: build-the-mono-repo
+        run: pnpm build
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: 📣 Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
-          version: pnpm changeset version
+          title: "chore(release): version packages 🦋"
           publish: pnpm changeset publish
-          commit: "chore(release): version common package [skip ci]"
-          title: "chore(release): version common package"
+          version: pnpm changeset version
+          commit: "chore(release): version packages 🦋 [skip ci]"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ env.NPM_TOKEN }}
